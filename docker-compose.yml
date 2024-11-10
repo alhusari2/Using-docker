@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "8080:5000"
+    env_file:
+      - app/.env
